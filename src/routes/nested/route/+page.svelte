@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { page } from '$app/stores'
-	import Pre from '$lib/pre.svelte'
-	import log from '$lib/utils/log'
+  import { page } from "$app/stores";
+  import Pre from "$lib/pre.svelte";
+  import log from "$lib/utils/log";
 
-	export let data
+  export let data;
 
-	log.page(`/some/nested/route/+page.svelte`)
+  log.pageEnter(`/some/nested/route/+page.svelte`);
 </script>
 
 <h1>Nested route</h1>

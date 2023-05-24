@@ -22,6 +22,7 @@
 		"@fontsource/jetbrains-mono": "^4.5.12",
 		"@fontsource/manrope": "^4.5.13",
 		"chalk": "^5.2.0",
-		"open-props": "^1.5.8"
+		"open-props": "^1.5.8",
+		"tracer": "^1.1.6"
 	}
 }

@@ -1,14 +1,16 @@
 import log from '$lib/utils/log'
 
 export async function load() {
-	log.page('/forms/+page.server.ts (load)')
+	log.pageEnter('ENTERING :: /actions/+page.server.ts (load)')
+	// log.pageEnter('/forms/+page.server.ts (load)')
+	log.pageExit('LEAVING :: /actions/+page.server.ts (load)')
 }
 
 export const actions = {
 	async login({ url }) {
-		log.page(`LOGIN ACTION: ${url.href}`)
+		log.bold(`LOGIN ACTION: ${url.href}`)
 	},
 	async register({ url }) {
-		log.page(`REGISTER ACTION: ${url.href}`)
+		log.bold(`REGISTER ACTION: ${url.href}`)
 	},
 }

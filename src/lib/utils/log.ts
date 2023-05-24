@@ -8,19 +8,28 @@ const styles = {
 }
 
 export default {
-	hooks(text: string) {
-		console.log(styles.tomato(text))
+	hooksEnter(text: string) {
+		console.log(chalk.bold(chalk.bgGreen(text)))
 	},
-	layout(text: string) {
-		console.log(styles.aqua(text))
+	hooksExit(text: string) {
+		console.log(chalk.bold(chalk.bgRed(text)))
 	},
-	page(text: string) {
-		console.log(styles.white(text))
+	layoutEnter(text: string) {
+		console.log(chalk.bold(chalk.bgGreen(text)))
+	},
+	layoutExit(text: string) {
+		console.log(chalk.bold(chalk.bgRed(text)))
+	},
+	pageEnter(text: string) {
+		console.log(chalk.bold(chalk.bgGreen(text)))
+	},
+	pageExit(text: string) {
+		console.log(chalk.bold(chalk.bgRed(text)))
 	},
 	endpoint(text: string) {
 		console.log(styles.black(text))
 	},
 	bold(text: string) {
-		console.log(chalk.bold(text))
+		console.log(chalk.bold(chalk.bold(text)))
 	},
 }
